@@ -1,15 +1,16 @@
-# 🏗️ Cheatsheet: Real-World Construction Analytics (EVM)
+# 🏗️ Cheatsheet: Predictive Project Planning & EVM
 
-## 1. Professional Metrics
-| Metric | Full Name | Calculation | Meaning |
-| :--- | :--- | :--- | :--- |
-| **SPI** | Schedule Performance Index | Planned / Actual Duration | < 1.0 means project is delayed. |
-| **CPI** | Cost Performance Index | Planned / Actual Cost | < 1.0 means project is over budget. |
+## 1. The Core Variables
+| Variable | Planning Term | What it represents |
+| :--- | :--- | :--- |
+| **`SPI`** | Schedule Index | Efficiency of time (Target > 1.0). Below 1.0 means you are behind schedule. |
+| **`CPI`** | Cost Index | Efficiency of budget (Target > 1.0). Below 1.0 means you are over-budget. |
+| **`MAE`** | Forecasting Error | Mean Absolute Error. Tells us how many days off our forecast is. |
+| **`Baseline`** | P6 Target | The "Planned" state of the project before execution began. |
 
-## 2. Key Observations
-*   **Performance Quadrants:** The visualisation segments tasks into four performance tiers.
-*   **Data Integrity:** The dataset was cleaned to handle inconsistent durations and simulate realistic cost variances based on construction industry standards.
-*   **Critical Path:** Projects with an SPI < 0.8 are flagged as "Critical Risks" requiring immediate stakeholder intervention.
+## 2. The Logic & The "Why"
+*   **Quadrant Analysis:** We plot SPI vs. CPI. *Why?* To see if a project is "Trading Money for Time" (Ahead of schedule but over budget) or in a "Critical Failure" state (Behind schedule AND over budget).
+*   **Random Forest Forecaster:** We use this model to predict the *Actual* duration. *Why?* Because humans are naturally optimistic when setting baselines. The AI looks at past failures to give a "Credible" completion date.
 
-## 3. Interview Pitch
-> "I ingested a raw construction dataset and mapped its variables to Earned Value Management (EVM) standards. I built a performance quadrant dashboard that identifies project health at scale. By visualizing the SPI vs. CPI relationship, I can instantly isolate systemic delays across a portfolio of hundreds of tasks—a vital skill for maintaining fleet readiness at sites like HMNB Clyde."
+## 3. Interview Script (The Babcock Pitch)
+> "In this project, I moved beyond standard manual reporting. I built a system that analyzes 500+ engineering tasks to calculate **SPI and CPI** performance. My **Random Forest model** then uses these metrics to provide a data-driven 'Correction' to the project baseline. This allows a Project Planner to report credible forecasts to stakeholders, ensuring that 'Fleet Readiness' is based on historical evidence rather than just estimates."

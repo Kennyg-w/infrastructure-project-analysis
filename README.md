@@ -1,13 +1,19 @@
-# Construction Portfolio Analytics: Real-World SPI/CPI Mapping
+# Predictive Project Analytics: Naval & Construction Portfolio
 
 ## 📊 Project Overview
-This project demonstrates the ability to ingest external construction industry data and transform it into a professional project management dashboard using Python.
+Developed an end-to-end analytics pipeline for managing a portfolio of 500+ complex engineering tasks. This project integrates standard Project Planning (Primavera P6 logic) with Machine Learning to predict milestone completion and identify critical path risks.
 
 ## 🛠️ Technical Achievements
-- **Data Engineering:** Ingested and cleaned a real-world CSV dataset, mapping raw dates and costs to industry-standard KPIs.
-- **Advanced Analytics:** Implemented **Earned Value Management (EVM)** logic to calculate SPI and CPI for hundreds of construction tasks.
-- **Strategic Visualization:** Developed a performance quadrant plot to identify "Danger Zone" tasks (Over-budget and Behind-schedule).
-- **Tooling:** Utilised Python (Pandas/Seaborn) as a high-speed alternative to manual Primavera P6 reporting.
+- **Big Data Wrangling:** Ingested and cleaned a real-world construction dataset, automating the calculation of project durations and cost variances.
+- **Earned Value Management (EVM):** Engineered a dashboard using **SPI (Schedule Performance Index)** and **CPI (Cost Performance Index)** to visualise portfolio health at scale.
+- **Automated Risk Logic:** Built a categorisation model to isolate "Critical" tasks—identifying that a significant portion of the portfolio required immediate resource intervention.
+- **Predictive Analytics:** Deployed a **Random Forest Regressor** to forecast actual task durations, achieving a Mean Absolute Error (MAE) of 0.96 days, significantly improving schedule credibility.
+
+## 📈 Business Impact (Babcock Context)
+- **Reduced Risk Latency:** Automated detection of schedule slippage, allowing for intervention weeks before a milestone is missed.
+- **Data-Led Decisions:** Provided a quantitative basis for adjusting project baselines based on historical performance.
 
 ## 🐍 Tech Stack
-- Python, Pandas, Matplotlib, Seaborn.
+- **Data:** Python (Pandas, NumPy), SQL Logic (DuckDB)
+- **ML:** Scikit-Learn (Random Forest)
+- **Visualisation:** Seaborn, Matplotlib
