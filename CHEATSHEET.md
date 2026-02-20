@@ -13,4 +13,4 @@
 *   **Random Forest Forecaster:** We use this model to predict the *Actual* duration. *Why?* Because humans are naturally optimistic when setting baselines. The AI looks at past failures to give a "Credible" completion date.
 
 ## 3. Interview Script (The Babcock Pitch)
-> "In this project, I moved beyond standard manual reporting. I built a system that analyzes 500+ engineering tasks to calculate **SPI and CPI** performance. My **Random Forest model** then uses these metrics to provide a data-driven 'Correction' to the project baseline. This allows a Project Planner to report credible forecasts to stakeholders, ensuring that 'Fleet Readiness' is based on historical evidence rather than just estimates."
+> "In this project, I moved beyond standard manual reporting. I built a system that analyses 500+ engineering tasks to calculate **SPI and CPI** performance. My **Random Forest model** then uses these metrics to provide a data-driven 'Correction' to the project baseline. This allows a Project Planner to report credible forecasts to stakeholders, ensuring that 'Fleet Readiness' is based on historical evidence rather than just estimates."
