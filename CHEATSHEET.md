@@ -1,16 +1,16 @@
-# 🏗️ Cheatsheet: Predictive Project Planning & EVM
+# 🏗️ Cheatsheet: Real-World Project Planning & ML
 
-## 1. The Core Variables
-| Variable | Planning Term | What it represents |
+## 1. Professional Metrics & Results
+| Metric | Result | Interpretation |
 | :--- | :--- | :--- |
-| **`SPI`** | Schedule Index | Efficiency of time (Target > 1.0). Below 1.0 means you are behind schedule. |
-| **`CPI`** | Cost Index | Efficiency of budget (Target > 1.0). Below 1.0 means you are over-budget. |
-| **`MAE`** | Forecasting Error | Mean Absolute Error. Tells us how many days off our forecast is. |
-| **`Baseline`** | P6 Target | The "Planned" state of the project before execution began. |
+| **MAE** | **31.36 Days** | On average, our completion forecast is within one month of reality in a highly volatile environment. |
+| **Correction** | **+41.0 Days** | For a typical 30-day task, the model suggests a 71-day duration is more realistic based on historical performance. |
+| **Status** | **Critical Delay** | Any task with an SPI < 0.8 is flagged for immediate executive review. |
 
-## 2. The Logic & The "Why"
-*   **Quadrant Analysis:** We plot SPI vs. CPI. *Why?* To see if a project is "Trading Money for Time" (Ahead of schedule but over budget) or in a "Critical Failure" state (Behind schedule AND over budget).
-*   **Random Forest Forecaster:** We use this model to predict the *Actual* duration. *Why?* Because humans are naturally optimistic when setting baselines. The AI looks at past failures to give a "Credible" completion date.
+## 2. The Logic: "Optimism Bias"
+*   **The Problem:** Humans set baselines based on "best-case scenarios."
+*   **The ML Solution:** The Random Forest model looks at "historical friction" (labor/equipment constraints). It found that for this dataset, tasks are consistently under-estimated by over 100%. 
+*   **The Result:** By recommending an adjustment of **41 days**, we protect the "Critical Path" from unexpected slippage.
 
 ## 3. Interview Script (The Babcock Pitch)
-> "In this project, I moved beyond standard manual reporting. I built a system that analyses 500+ engineering tasks to calculate **SPI and CPI** performance. My **Random Forest model** then uses these metrics to provide a data-driven 'Correction' to the project baseline. This allows a Project Planner to report credible forecasts to stakeholders, ensuring that 'Fleet Readiness' is based on historical evidence rather than just estimates."
+> "In my analysis of 1,300 engineering tasks, I moved beyond standard tracking to identify **Systemic Optimism Bias**. While the original baselines suggested 30-day turnarounds, my predictive model — which achieved a Mean Absolute Error of 31 days—revealed that a 71-day cycle was historically more accurate. For a Project Planner at Faslane, this means I can provide stakeholders with **credible, evidence-based forecasts** rather than aspirational dates, directly supporting mission-readiness."
