@@ -1,4 +1,4 @@
-# ⚓ Infrastructure & Heavy Engineering Analytics: Predictive Risk System
+# ⚓  Infrastructure & Heavy Engineering Analytics  Predictive Risk & Baseline Forecasting
 
 ## 📊 Project Overview
 Developed an end-to-end analytics pipeline to monitor 1,300+ heavy infrastructure tasks. This project integrates Earned Value Management (EVM) with Machine Learning to identify systemic optimism bias and provide data-led schedule corrections.
