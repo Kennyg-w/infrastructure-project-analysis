@@ -1,16 +1,17 @@
-# 🏗️ Cheatsheet: Real-World Project Planning & ML
+# 🏗️ Cheatsheet: Predictive Project Planning & ML
 
-## 1. Professional Metrics & Results
-| Metric | Result | Interpretation |
+## 1. Final Model Metrics
+| Metric | Value | Interpretation |
 | :--- | :--- | :--- |
-| **MAE** | **31.36 Days** | On average, our completion forecast is within one month of reality in a highly volatile environment. |
-| **Correction** | **+41.0 Days** | For a typical 30-day task, the model suggests a 71-day duration is more realistic based on historical performance. |
-| **Status** | **Critical Delay** | Any task with an SPI < 0.8 is flagged for immediate executive review. |
+| **MAE** | **29.79 Days** | The average margin of error for milestone completion forecasts. |
+| **Baseline** | **30.0 Days** | The original "Optimistic" estimate. |
+| **Forecast** | **90.1 Days** | The model's "Realistic" predicted duration based on historical friction. |
+| **Correction**| **+60.1 Days** | The necessary buffer recommended to protect the critical path. |
 
-## 2. The Logic: "Optimism Bias"
-*   **The Problem:** Humans set baselines based on "best-case scenarios."
-*   **The ML Solution:** The Random Forest model looks at "historical friction" (labor/equipment constraints). It found that for this dataset, tasks are consistently under-estimated by over 100%. 
-*   **The Result:** By recommending an adjustment of **41 days**, we protect the "Critical Path" from unexpected slippage.
+## 2. Technical Terms for Interviews
+*   **Stochastic Slippage:** The random delays modeled between 0.9x and 1.6x of the baseline to simulate real-world engineering friction.
+*   **Random State (42):** The seed used to ensure **Reproducibility**, allowing the results to remain consistent across different model runs.
+*   **EVM Quadrants:** The visualization of Schedule (SPI) vs. Cost (CPI) used to identify underperforming project sectors.
 
-## 3. Interview Script (The Babcock Pitch)
-> "In my analysis of 1,300 engineering tasks, I moved beyond standard tracking to identify **Systemic Optimism Bias**. While the original baselines suggested 30-day turnarounds, my predictive model — which achieved a Mean Absolute Error of 31 days—revealed that a 71-day cycle was historically more accurate. For a Project Planner at Faslane, this means I can provide stakeholders with **credible, evidence-based forecasts** rather than aspirational dates, directly supporting mission-readiness."
+## 3. The "Babcock" Pitch
+> "I built a model that identifies **Systemic Optimism Bias**. While the original plan for this portfolio suggested 30-day turnarounds, my analysis proved a 90-day cycle was more realistic. By applying a 60-day correction factor, I can ensure that resource planning for naval refits is based on data-driven evidence rather than best-case scenarios."
