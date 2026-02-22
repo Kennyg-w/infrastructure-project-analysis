@@ -1,17 +1,15 @@
-# 🏗️ Cheatsheet: Infrastructure & Heavy Engineering Analytics - Predictive Risk & Baseline Forecasting
+# 🏗️ Cheatsheet: Strategic Infrastructure Analytics
 
-## 1. Final Model Metrics
-| Metric | Value | Interpretation |
+## 1. Professional Metrics
+| Metric | Logic | Strategic Meaning |
 | :--- | :--- | :--- |
-| **MAE** | **29.79 Days** | The average margin of error for milestone completion forecasts. |
-| **Baseline** | **30.0 Days** | The original "Optimistic" estimate. |
-| **Forecast** | **90.1 Days** | The model's "Realistic" predicted duration based on historical friction. |
-| **Correction**| **+60.1 Days** | The necessary buffer recommended to protect the critical path. |
+| **SPI** | Planned / Actual Time | Efficiency of the schedule. Target is > 1.0. |
+| **CPI** | Planned / Actual Cost | Efficiency of the budget. Target is > 1.0. |
+| **MAE** | Prediction Error | **29.79 Days:** The margin of error for our "Realistic" forecast. |
 
-## 2. Technical Terms for Interviews
-*   **Stochastic Slippage:** The random delays modeled between 0.9x and 1.6x of the baseline to simulate real-world engineering friction.
-*   **Random State (42):** The seed used to ensure **Reproducibility**, allowing the results to remain consistent across different model runs.
-*   **EVM Quadrants:** The visualization of Schedule (SPI) vs. Cost (CPI) used to identify underperforming project sectors.
+## 2. The "Curve" vs "Cloud" (Pro Interview Answer)
+*Question: "Why do your SPI and CPI points form a curve instead of a random cloud?"*
+*Answer:* "In this specific simulation, I utilised a fixed random seed (42) for both duration and cost slippage to ensure **perfect reproducibility**. This created a mathematical dependency that reveals the 'Efficiency Frontier' of the project. In a raw real-world dataset, these would appear as a cloud, but the **Quadrant Logic** (Bottom-Left = Danger) remains the same."
 
-## 3. The "Babcock" Pitch
-> "I built a model that identifies **Systemic Optimism Bias**. While the original plan for this portfolio suggested 30-day turnarounds, my analysis proved a 90-day cycle was more realistic. By applying a 60-day correction factor, I can ensure that resource planning for naval refits is based on data-driven evidence rather than best-case scenarios."
+## 3. Executive Pitch
+> "I built a system that moves beyond 'status reporting' and into 'predictive risk management.' By mapping 1,300 tasks into a **Strategic Performance Quadrant**, I identified a systemic 60-day gap between planned and actual durations. This allows me to provide senior stakeholders with **evidence-based baselines**, protecting the critical path of heavy engineering projects."
